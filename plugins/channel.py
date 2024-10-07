@@ -76,11 +76,10 @@ async def send_movie_updates(bot, file_name, caption, file_id):
             return 
         processed_movies.add(movie_name)    
         poster_url = await get_imdb(movie_name)
-        caption_message = f"#New_File_Added ✅\n\n🍿 File_Name:- <code>{movie_name}</code>\n\n🎙 Language:- {language}\n\n‼️ Quality:- {quality}\n🔎 𝐒𝐞𝐚𝐫𝐜𝐡 𝐨𝐧 :- @movierequestgroupHQ"   
+        caption_message = f"#New_File_Added ✅<blockquote>\n\n🍿 File_Name:- <code>{movie_name}</code>\n\n🎙 Language:- {language}\n\n‼️ Quality:- {quality}</blockquote>\n🔎 𝖭𝗈𝗐 𝖸𝗈𝗎 𝖢𝖺𝗇 𝖲𝖾𝖺𝗋𝖼𝗁 𝖳𝗁𝗂𝗌 𝖨𝗇 𝖮𝗎𝗋 𝖬𝗈𝗏𝗂𝖾 𝖲𝖾𝖺𝖼𝗁 𝖦𝗋𝗈𝗎𝗉 👇"   
         movie_update_channel = await db.movies_update_channel_id() 
-        search_movie = file_name.replace(" ", '-')
         btn = [
-            [InlineKeyboardButton('Get File', url=f'https://telegram.me/{temp.U_NAME}?start=getfile-{search_movie}')]
+            [InlineKeyboardButton('💫Mᴏᴠɪᴇ Sᴇᴀʀᴄʜ Gʀᴏᴜᴘ💝', url=f'https://telegram.me/movierequestgroupHQ')]
         ]
         reply_markup = InlineKeyboardMarkup(btn)
         if poster_url:
