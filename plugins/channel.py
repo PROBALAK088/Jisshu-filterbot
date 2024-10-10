@@ -90,7 +90,7 @@ async def send_movie_updates(bot, file_name, caption, file_id):
         
         btn = [
             [InlineKeyboardButton('🎥 𝗚𝗲𝘁 𝗙𝗶𝗹𝗲 🎥', url=f'https://t.me/{temp.U_NAME}?start=pm_mode_file_{ADMINS[0]}_{file_id}')],
-            [InlineKeyboardButton('🔰 𝗠𝗼𝘃𝗶𝗲 𝗦𝗲𝗮𝗿𝗰𝗵 𝗚𝗿𝗼𝘂𝗽 🔰', url='https://t.me/+OG3sftDEbZ9kMzFl')]
+            [InlineKeyboardButton('💫Mᴏᴠɪᴇ Sᴇᴀʀᴄʜ Gʀᴏᴜᴘ💝', url='https://t.me/movierequestgroupHQ')]
         ]
         reply_markup = InlineKeyboardMarkup(btn)
         
