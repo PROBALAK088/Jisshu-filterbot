@@ -75,11 +75,25 @@ async def send_movie_updates(bot, file_name, caption, file_id):
         if movie_name in processed_movies:
             return 
         processed_movies.add(movie_name)    
+        
         poster_url = await get_imdb(movie_name)
-        caption_message = f"#New_File_Added ✅<blockquote>\n\n🍿 File_Name:- <code>{movie_name}</code>\n\n🎙 Language:- {language}\n\n‼️ Quality:- {quality}</blockquote>\n🔎 𝖭𝗈𝗐 𝖸𝗈𝗎 𝖢𝖺𝗇 𝖲𝖾𝖺𝗋𝖼𝗁 𝖳𝗁𝗂𝗌 𝖨𝗇 𝖮𝗎𝗋 𝖬𝗈𝗏𝗂𝖾 𝖲𝖾𝖺𝖼𝗁 𝖦𝗋𝗈𝗎𝗉 👇"   
-        movie_update_channel = await db.movies_update_channel_id() 
+        
+        caption_message = (
+            f"🎬 <b>Title:</b> <code>{title or movie_name}</code>\n"
+            f"🗂 <b>Genres:</b> {genres or 'Unknown'}\n"
+            f"📆 <b>Year:</b> {release_date or 'Unknown'}\n"
+            f"⭐ <b>IMDb Rating:</b> {rating or 'N/A'} / 10\n\n"
+            f"🔊 <b>Language:</b> {language}\n"
+            f"💿 <b>Quality:</b> {quality}\n\n"
+            f"📌 <b>𝗡𝗼𝘁𝗲:</b> 𝙄𝙛 𝙮𝙤𝙪 𝙣𝙚𝙚𝙙 𝙩𝙤 𝙜𝙚𝙩 𝙖𝙡𝙡 𝙦𝙪𝙖𝙡𝙞𝙩𝙮 𝙛𝙞𝙡𝙚𝙨, 𝙥𝙡𝙚𝙖𝙨𝙚 𝙘𝙤𝙥𝙮 𝙩𝙝𝙚 𝙖𝙗𝙤𝙫𝙚 𝙛𝙞𝙡𝙚 𝙣𝙖𝙢𝙚 𝙖𝙣𝙙 𝙥𝙖𝙨𝙩𝙚 𝙞𝙩 𝙞𝙣𝙩𝙤 𝙩𝙝𝙚 𝙗𝙚𝙡𝙤𝙬 𝙢𝙤𝙫𝙞𝙚 𝙨𝙚𝙖𝙧𝙘𝙝 𝙜𝙧𝙤𝙪𝙥 🔰.\n\n"
+            f"🎥 <b>𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱 𝗟𝗶𝗻𝗸:</b> 𝘾𝙡𝙞𝙘𝙠 𝙩𝙝𝙚 𝙗𝙪𝙩𝙩𝙤𝙣 𝙗𝙚𝙡𝙤𝙬 𝙩𝙤 𝙜𝙚𝙩 𝙩𝙝𝙚 𝙛𝙞𝙡𝙚 🎥!"
+        )
+        
+        movie_update_channel = await db.movies_update_channel_id()    
+        
         btn = [
-            [InlineKeyboardButton('💫Mᴏᴠɪᴇ Sᴇᴀʀᴄʜ Gʀᴏᴜᴘ💝', url=f'https://telegram.me/movierequestgroupHQ')]
+            [InlineKeyboardButton('🎥 𝗚𝗲𝘁 𝗙𝗶𝗹𝗲 🎥', url=f'https://t.me/{temp.U_NAME}?start=pm_mode_file_{ADMINS[0]}_{file_id}')],
+            [InlineKeyboardButton('🔰 𝗠𝗼𝘃𝗶𝗲 𝗦𝗲𝗮𝗿𝗰𝗵 𝗚𝗿𝗼𝘂𝗽 🔰', url='https://t.me/movierequestgroupHQ')]
         ]
         reply_markup = InlineKeyboardMarkup(btn)
         if poster_url:
