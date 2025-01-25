@@ -34,7 +34,7 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '-1002335049872'))  # set shortner log channel
 DELETE_CHANNELS = int(environ.get('DELETE_CHANNELS','-1002251810897')) # The movie you upload in it will be deleted from the bot.
 LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', '-1002335049872'))
-auth_channel = environ.get('AUTH_CHANNEL', '-1002245466708')
+auth_channel = environ.get('AUTH_CHANNEL', '-1002445720128')
 SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', '-1002161994941'))
 request_channel = environ.get('REQUEST_CHANNEL', '-1002406990394') # If anyone sends a request message to your bot, you will get it in this channel.
 MOVIE_UPDATE_CHANNEL = int(environ.get('MOVIE_UPDATE_CHANNEL', '-1002257424658')) # 
@@ -43,16 +43,16 @@ SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/movierequestgroupMZ') #
 #---------------------------------------------------------------
 IS_VERIFY = is_enabled('IS_VERIFY', True)
 #---------------------------------------------------------------
-TUTORIAL = environ.get("TUTORIAL", "https://t.me/how_to_download_moviezone/7")
-TUTORIAL_2 = environ.get("TUTORIAL_2", "https://t.me/how_to_download_moviezone/7")
-TUTORIAL_3 = environ.get("TUTORIAL_3", "https://t.me/how_to_download_moviezone/7")
+TUTORIAL = environ.get("TUTORIAL", "https://t.me/how_to_download_moviezone/5")
+TUTORIAL_2 = environ.get("TUTORIAL_2", "https://t.me/how_to_download_moviezone/5")
+TUTORIAL_3 = environ.get("TUTORIAL_3", "https://t.me/how_to_download_moviezone/5")
 VERIFY_IMG = environ.get("VERIFY_IMG", "https://graph.org/file/1669ab9af68eaa62c3ca4.jpg")
-SHORTENER_API = environ.get("SHORTENER_API", "065bee787a4a4781fd95f773d5a129b3f7421872")
-SHORTENER_WEBSITE = environ.get("SHORTENER_WEBSITE", 'maxshare.pro')
-SHORTENER_API2 = environ.get("SHORTENER_API2", "065bee787a4a4781fd95f773d5a129b3f7421872")
-SHORTENER_WEBSITE2 = environ.get("SHORTENER_WEBSITE2", 'maxshare.pro')
-SHORTENER_API3 = environ.get("SHORTENER_API3", "065bee787a4a4781fd95f773d5a129b3f7421872")
-SHORTENER_WEBSITE3 = environ.get("SHORTENER_WEBSITE3", 'maxshare.pro')
+SHORTENER_API = environ.get("SHORTENER_API", "29b557074aa857e56ca7fd6ad2e42ef2788e8443")
+SHORTENER_WEBSITE = environ.get("SHORTENER_WEBSITE", 'modijiurl.com')
+SHORTENER_API2 = environ.get("SHORTENER_API2", "29b557074aa857e56ca7fd6ad2e42ef2788e8443")
+SHORTENER_WEBSITE2 = environ.get("SHORTENER_WEBSITE2", 'modijiurl.com')
+SHORTENER_API3 = environ.get("SHORTENER_API3", "29b557074aa857e56ca7fd6ad2e42ef2788e8443")
+SHORTENER_WEBSITE3 = environ.get("SHORTENER_WEBSITE3", 'modijiurl.com')
 TWO_VERIFY_GAP = int(environ.get('TWO_VERIFY_GAP', "14400"))
 THREE_VERIFY_GAP = int(environ.get('THREE_VERIFY_GAP', "14400"))
 #---------------------------------------------------------------
