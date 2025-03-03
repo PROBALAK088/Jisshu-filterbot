@@ -56,6 +56,10 @@ async def send_movie_updates(bot, file_name, caption, file_id, video_path=None):
         processed_movies.add(movie_name)
 
         poster_url, title, genres, release_date, rating = await get_imdb(movie_name)
+        @Client.on_message(filters.chat(CHANNELS) & media_filter)
+async def media(bot, message):
+    print("Received a new media message!")  # Debugging Message
+
 
         # যদি পোস্টার না থাকে, তাহলে ভিডিও থেকে থাম্বনেইল এক্সট্রাক্ট করো
         if not poster_url and video_path:
