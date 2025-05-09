@@ -13,32 +13,32 @@ def is_enabled(value, default):
 #---------------------------------------------------------------
 #---------------------------------------------------------------         ,
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ.get('API_ID', '24579269'))
-API_HASH = environ.get('API_HASH', '99dff6c471774c2be6ff3d4623a6c0c0')
+API_ID = int(environ.get('API_ID', '29841034'))
+API_HASH = environ.get('API_HASH', 'fc533d811f28228e121bbe3901d8f565')
 BOT_TOKEN = environ.get('BOT_TOKEN', '')
 #---------------------------------------------------------------
 #---------------------------------------------------------------
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6366880905 7023006442').split()]
-USERNAME = environ.get('USERNAME', "https://t.me/Sourav00876") # ADMIN USERNAME
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002251810897'))
-MOVIE_GROUP_LINK = environ.get('MOVIE_GROUP_LINK', 'https://t.me/movierequestgroupHQ')
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002453382170').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6317211079').split()]
+USERNAME = environ.get('USERNAME', "https://t.me/amani_jii") # ADMIN USERNAME
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002260816968'))
+MOVIE_GROUP_LINK = environ.get('MOVIE_GROUP_LINK', 'https://t.me/msrequest_group')
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002483175670').split()]
 #---------------------------------------------------------------
 #---------------------------------------------------------------
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://souravbosu489:zhsZgesgojjn1trX@cluster0.qts6o.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://saitamaafbot088:koBwa7eefYlgkl38@cluster0.tcycivm.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
-COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Luxflix_files')
+COLLECTION_NAME = environ.get('COLLECTION_NAME', 'saitama_files')
 #---------------------------------------------------------------
 #---------------------------------------------------------------
 #----------- There will be channel id add in all these ---------
-LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '-1002335049872'))  # set shortner log channel
+LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '-1002421781174'))  # set shortner log channel
 DELETE_CHANNELS = int(environ.get('DELETE_CHANNELS','-1002251810897')) # The movie you upload in it will be deleted from the bot.
-LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', '-1002335049872'))
-auth_channel = environ.get('AUTH_CHANNEL', '-1002445720128')
-SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', '-1002161994941'))
-request_channel = environ.get('REQUEST_CHANNEL', '-1002406990394') # If anyone sends a request message to your bot, you will get it in this channel.
-MOVIE_UPDATE_CHANNEL = int(environ.get('MOVIE_UPDATE_CHANNEL', '-1002257424658')) # 
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/movierequestgroupMZ') #Support group link ( make sure bot is admin )
+LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', '-1002317782023'))
+auth_channel = environ.get('AUTH_CHANNEL', '-1002178835257')
+SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', '-1002219563250'))
+request_channel = environ.get('REQUEST_CHANNEL', '-1002604708975') # If anyone sends a request message to your bot, you will get it in this channel.
+MOVIE_UPDATE_CHANNEL = int(environ.get('MOVIE_UPDATE_CHANNEL', '-1002301268603')) # 
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/mslanders_help') #Support group link ( make sure bot is admin )
 #---------------------------------------------------------------
 #---------------------------------------------------------------
 IS_VERIFY = is_enabled('IS_VERIFY', True)
